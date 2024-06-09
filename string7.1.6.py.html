@@ -1,0 +1,11 @@
+inputs= input("Enter a string: ")
+print(inputs)
+char= list(inputs)
+for i in range(len(char)):
+    for j in range(i + 1, len(char)):
+        if char[i] > char[j]:
+            char[i],char[j] = char[j],char[i]
+sorteds= ''.join(char)
+print("Sorted string in alphabetical order:", sorteds)
+
+

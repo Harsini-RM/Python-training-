@@ -1,0 +1,12 @@
+sources = input()
+destination= ""
+def copy(source, destination, index=0):
+    if index == len(source):
+        return destination
+    else:
+        destination += source[index]
+        return copy(source, destination, index + 1)
+destination = copy(sources, destination)
+print("Source string:", sources)
+print("Copied string:", destination)
+

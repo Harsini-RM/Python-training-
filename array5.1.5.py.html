@@ -1,0 +1,20 @@
+import math
+n = int(input())
+numbers = []
+for i in range(n):
+    num = float(input(f"Number {i+1}: "))
+    numbers.append(num)
+total_sum = 0
+for num in numbers:
+    total_sum += num
+mean = total_sum / n
+variance = 0
+for num in numbers:
+    variance += (num - mean) ** 2
+variance /= n
+deviation = math.sqrt(variance)
+print("\nResults:")
+print("Mean:", mean)
+print("Variance:", variance)
+print("Deviation:", deviation)
+

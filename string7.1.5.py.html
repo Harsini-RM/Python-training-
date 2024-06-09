@@ -1,0 +1,18 @@
+string1 = input("Enter the first string: ")
+print(string1)
+string2 = input("Enter the second string: ")
+print(string2)
+char_count = {}
+for char in string1:
+    char_count[char] = char_count.get(char, 0) + 1
+for char in string2:
+    if char in char_count:
+        char_count[char] -= 1
+    else:
+        print("Extra character in the second string:", char)
+        break
+for char, count in char_count.items():
+    if count != 0:
+        print("Extra character in the first string:", char)
+        break
+

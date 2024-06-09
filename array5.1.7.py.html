@@ -1,0 +1,13 @@
+arr1 = list(map(int, input().split()))
+arr2 = list(map(int, input().split()))
+element_arr1 = arr1[0]
+for num in arr1:
+    if num > element_arr1:
+        element_arr1 = num
+element_arr2 = arr2[0]
+for num in arr2:
+    if num < element_arr2:
+        element_arr2 = num
+product = element_arr1 * element_arr2
+print("the Product of this two is:", product)
+

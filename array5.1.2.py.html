@@ -1,0 +1,19 @@
+array = []
+a=int(input())
+for i in range(a):
+   lis=int(input())
+   array.append(lis)
+print("the arrays are:",array)
+element= int(input())
+found = False
+for i in range(len(array)):
+    if array[i] == element:
+        print(f"Element {element} found at position {i + 1}.")
+        found = True
+        break
+if not found:
+    print(f"Element {element} not found in the array.")
+
+
+
+

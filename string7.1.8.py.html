@@ -1,0 +1,14 @@
+string = input("Enter a string: ")
+print(string)
+words = string.split()
+word1 = ""
+lengths = 0
+for word in words:
+    length = len(word)
+    if length>lengths:
+        word1 = word
+        lengths = length
+print("Longest word:", word1)
+print("Number of characters in the longest word:", lengths)
+
+
